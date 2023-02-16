@@ -20,7 +20,7 @@
     <p class="product__avaiability">
       {{ produto?.quantidadeEstoque }} unidade(s) em estoque
     </p>
-    <button type="button" class="product__buy__button">
+    <button (click)="adicionarAoCarrinho()">
       Adicionar ao carrinho
     </button>
   </div>
