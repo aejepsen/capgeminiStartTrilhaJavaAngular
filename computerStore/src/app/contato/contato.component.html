@@ -1,6 +1,10 @@
 <h2  class="contact__title">Entre em contato</h2>
 <section class="contact__container">
-  <form class="contact-form" [formGroup]="formContato">
+  <form 
+    class="contact-form" 
+    [formGroup]="formContato"
+    (ngSubmit)="enviarFormulario()"  
+  >
     <input 
       type="text" 
       placeholder="Nome"
@@ -115,6 +119,7 @@
     </div>
     <button
       type="submit"
+      name="submit"
       [disabled]="formContato.invalid"
     >Enviar</button>
   </form>
